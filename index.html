@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <!-- fuente google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Tal-Ivan</title>
+</head>
+
+<body>
+    <!-- logo + menu de la pagina-->
+    <header class="header">
+        <div class="header__content">
+            <a href="./index.html" class="content__title"><img src="./images/head_logo.png" alt="head_logo"></a>
+            <nav>
+                <ul class="content__navbar">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <!-- <li><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li> -->
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner_logo">
+            <img src="./images/logo.jpg" alt="">
+        </div>
+        <!-- sobre nosotros-->
+        <section id="sobre_nosotros">
+            <div class="sectione__text">
+                <h1> Sobre Nosotros</h1>
+                <p> Somos una de las marcas más valoradas por los chilenos. Y lo decimos con humildad y con el orgullo
+                    de formar parte de una empresa de origen familiar con más de 60 años de trayectoria. ¿Sabías que
+                    nuestro nombre se debe al tradicional juego de fichas y que nuestro grupo fundador solía reunirse a
+                    jugar dominó cada fin de semana? ¡Conoce nuestros grandes hitos!
+                </p>
+            </div>
+        </section>
+        <hr>
+        <!-- productos-->
+        <section class="productos container">
+            <h2 class="productos__title">Productos</h2>
+            <div class="productos__grid">
+              <article class="card">
+                <div class="card__header">
+                  <small class="card__header--strong">Nuevo</small>
+                  <img src="./images/chacarero.jpeg" alt="Chacarero" />
+                </div>
+                <h3 class="card__title">Chacarero</h3>
+             
+                <a class="card__link" href="">Saber más</a>
+              </article>
+
+              <article class="card">
+                <div class="card__header">
+                  <small class="card__header--strong">Nuevo</small>
+                  <img src="./images/entrada.jpeg" alt="Entrada" />
+                </div>
+                <h3 class="card__title">Entrada</h3>
+           
+                <a class="card__link" href="">Saber más</a>
+              </article>
+
+              <article class="card">
+                <div class="card__header">
+                  <small class="card__header--strong">Nuevo</small>
+                  <img src="./images/chorillana.jpeg" alt="Chorrillana" />
+                </div>
+                <h3 class="card__title">Chorrillana</h3>
+                <a class="card__link" href="">Saber más</a>
+              </article>
+
+        </section>
+        </div>
+        <div class="productos__button">
+            <a href="./pages/productos.html"><input type="button" value="Ver Mas"></a>
+        </div>
+        <hr>
+        <!-- ubicacion-->
+        <section id="ubicacion">
+            <div class="ubicacion__title">
+                <h3>Ubicacion</h3>
+            </div>
+            <div class="ubicacion__parrafo">
+                <p>Queremos conocerte, ven y encontremonos en "El Tal Ivan"</p>
+            </div>
+            <div class="ubicacion__mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.967068144555!2d-70.93146308473288!3d-33.083650986166866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96629dc0409e55e3%3A0x1881a30f5a51a4f1!2sRestaurant%20el%20tal%20Iv%C3%A1n!5e0!3m2!1ses-419!2scl!4v1654294295385!5m2!1ses-419!2scl"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <hr>
+        <!-- formulario de contacto -->
+        <section class="contacto">
+            <div class="contacto__title">
+                <h4>Contacto</h4>
+            </div>
+            <form action="#">
+                <div class="contacto__nombre">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="contacto__email">
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="contacto__mensaje">
+                    <label for="Observaciones"> Mensaje
+                        <textarea placeholder=""></textarea>
+                    </label>
+                </div>
+                <div class="contacto__enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <hr>
+    </main>
+    <!-- cierre de form contacto -->
+    <!-- inicio de footer -->
+    <footer class="footer">
+        <!-- <div class="colfooter">
+            <h3>Información</h3>
+            <a href="nosotros.html">
+                <h6>Nosotros</h6>
+            </a>
+            <a href="clientes.html">
+                <h6>Clientes</h6>
+            </a>
+            <a href="booster.html">
+                <h6>Booster</h6>
+            </a>
+            <a href="Contacto.html">
+                <h6>Contacto</h6>
+            </a>
+        </div> -->
+        <div class="footer__title">
+            <h5>Siguenos</h5>
+        </div>
+         <!-- boton fb-->
+         <div class="redes__sociales">
+            <div class="redes__fb">
+                <a href="https://www.facebook.com/talivan.parrilladas" class="button__fb" target="_blank">
+                    <i class="button__fb">
+                        <img src="./images/fb.png" alt="fb">
+                    </i>
+                </a>
+            </div>
+            <!--  BOTON WHATSAPP  -->
+            <div class="redes__wsp">  
+                <a href="https://wa.me/56987476291" class="button__whatsapp" target="_blank">
+                    <i class="button__whatsapp--mt">
+                        <img src="./images/whatsapp.png" alt="whatsapp_icon">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© Copyright 2022-2022 Francisco Perez - Todos los Derechos Reservados</p>
+        </div>
+    </footer>
+    <!-- cierre de footer -->
+</body>
+
+</html>
