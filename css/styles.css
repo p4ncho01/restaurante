@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,9 +35,6 @@ ul {
     font-size: 40px;
 }
 
-.content__title {
-    
-}
 
 .content__navbar {
     display: flex;
@@ -56,14 +53,14 @@ ul {
 
 .banner_logo img {
     Margin-left: auto;
-    Margin-right: auto; 
+    Margin-right: auto;
     Width: 100%;
 }
 
 /* SOBRE NOSOTROS*/
 
 #sobre_nosotros {
-    padding-top: 20px; 
+    padding-top: 20px;
     text-align: center;
     align-items: center;
 }
@@ -71,14 +68,9 @@ ul {
 
 .sectione_text {
     text-align: center;
-    padding-left: ;
-    padding-right: ; 
     margin: 25px 50px;
 }
 
-.section--text h1 {
-   
-}
 
 .sectione_text p {
     margin-bottom: 10px;
@@ -86,13 +78,9 @@ ul {
 
 /* PRODUCTOS*/
 
-#productos{
-    
-}
-
-.productos__title h2{
-    padding-top: 20px ;
-   text-align: center;
+.productos__title h2 {
+    padding-top: 20px;
+    text-align: center;
 }
 
 .productos__image {
@@ -108,7 +96,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-}
+}   
 
 .productos__button {
     text-align: center;
@@ -118,40 +106,40 @@ ul {
 .card {
     background-color: #fff;
     padding: 20px;
-    width: 400px; 
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  }
-  
-  .card__header {
+}
+
+.card__header {
     position: relative;
-  }
-  
-  .card__header img {
-    align-items: center;
+}
+
+.card__header img {
+    justify-content: center;
     width: 35%;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
-  
-  .card__header small {
+}
+
+.card__header small {
     background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
     padding: 8px;
     position: absolute;
     right: 0;
     border-bottom-left-radius: 10px;
-  }
-  
-  .card__title {
+}
+
+.card__title {
     margin-bottom: 20px;
-  }
-  
-  .card__description {
+}
+
+.card__description {
     margin-bottom: 40px;
-  }
-  
-  .card__link {
+}
+
+.card__link {
     background-color: #22c55e;
     color: #fff;
     width: 100%;
@@ -159,33 +147,31 @@ ul {
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-  }
-  
-  .card__header--strong {
+}
+
+.card__header--strong {
     text-transform: uppercase;
     font-weight: bold;
-  }
+}
 
-  .productos {
+.productos {
     margin-top: 40px;
-  }
-  
-  .productos__title {
+}
+
+.productos__title {
     margin-bottom: 20px;
     text-align: center;
-  }
-  
-  .productos__grid {
+}
+
+.productos__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     /* row-gap: espaciar verticalmente */
     /* column-gap: horizontalmente */
-  }
-
-#ubicacion {
-    
 }
+
+
 
 .ubicacion__title {
     text-align: center;
@@ -198,8 +184,8 @@ ul {
     align-items: center;
 }
 
-.ubicacion__mapa {
-    text-align: end;
+.ubicacion__mapa iframe {
+    align-items: end;
     margin-right: 20px;
 }
 
@@ -229,13 +215,10 @@ ul {
     margin-bottom: 10px;
 }
 
-#redes {
-
-}
 
 .redes__sociales {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     margin: 0 47%;
 
 }
@@ -256,8 +239,6 @@ ul {
 
 }
 
-#footer {
-}
 
 .footer__title {
     text-align: center;
@@ -281,15 +262,20 @@ ul {
 /* mobile last */
 @media (max-width: 768px) {
     .productos__grid {
-       grid-template-columns: repeat(2, 1fr);
-     } 
-   }
-   
-   @media (max-width: 576px) {
-     .courses__grid {
-       grid-template-columns: 1fr;
-     } 
-   
-     .content__navbar {
-       display: none;
-     }
+        grid-template-columns: 1fr;
+    }
+    .ubicacion__mapa iframe { 
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .content__navbar {
+        flex-direction: column;
+    }
+
+    .ubicacion__mapa iframe { 
+        width: 100% !important;
+    }
+    
+}
