@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- Bosstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--icono -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Tal-Ivan</title>
 </head>
 
@@ -22,7 +27,6 @@
             <nav>
                 <ul class="content__navbar">
                     <li><a href="./index.html">Inicio</a></li>
-                    <!-- <li><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li> -->
                     <li><a href="./pages/productos.html">Productos</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
@@ -32,7 +36,7 @@
 
     <main>
         <div class="banner_logo">
-            <img src="./images/logo.jpg" alt="">
+            <img src="./images/logo.png" alt="banner_logo">
         </div>
         <!-- sobre nosotros-->
         <section id="sobre_nosotros">
@@ -50,127 +54,88 @@
         <section class="productos container">
             <h2 class="productos__title">Productos</h2>
             <div class="productos__grid">
-              <article class="card">
-                <div class="card__header">
-                  <small class="card__header--strong">Nuevo</small>
-                  <img src="./images/chacarero.jpeg" alt="Chacarero" />
-                </div>
-                <h3 class="card__title">Chacarero</h3>
-             
-                <a class="card__link" href="">Saber más</a>
-              </article>
+                <article class="card">
+                    <div class="card__header">
+                        <small class="card__header--strong">Nuevo</small>
+                        <img src="./images/chacarero.jpeg" alt="Chacarero" />
+                    </div>
+                    <h3 class="card__title">Chacarero</h3>
 
-              <article class="card">
-                <div class="card__header">
-                  <small class="card__header--strong">Nuevo</small>
-                  <img src="./images/entrada.jpeg" alt="Entrada" />
-                </div>
-                <h3 class="card__title">Entrada</h3>
-           
-                <a class="card__link" href="">Saber más</a>
-              </article>
+                    <a class="card__link" href="./pages/productos.html">Saber más</a>
+                </article>
 
-              <article class="card">
-                <div class="card__header">
-                  <small class="card__header--strong">Nuevo</small>
-                  <img src="./images/chorillana.jpeg" alt="Chorrillana" />
-                </div>
-                <h3 class="card__title">Chorrillana</h3>
-                <a class="card__link" href="">Saber más</a>
-              </article>
+                <article class="card">
+                    <div class="card__header">
+                        <small class="card__header--strong">Nuevo</small>
+                        <img src="./images/entrada.jpeg" alt="Entrada" />
+                    </div>
+                    <h3 class="card__title">Entrada</h3>
 
+                    <a class="card__link" href="./pages/productos.html">Saber más</a>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <small class="card__header--strong">Nuevo</small>
+                        <img src="./images/chorillana.jpeg" alt="Chorrillana" />
+                    </div>
+                    <h3 class="card__title">Chorrillana</h3>
+                    <a class="card__link" href="./pages/productos.html">Saber más</a>
+                </article>
         </section>
         </div>
         <div class="productos__button">
-            <a href="./pages/productos.html"><input type="button" value="Ver Mas"></a>
+            <a class="card__link" href="./pages/productos.html">Saber más</a>
         </div>
         <hr>
         <!-- ubicacion-->
-        <section id="ubicacion">
-            <div class="ubicacion__title">
-                <h3>Ubicacion</h3>
+        <section>
+            <h2 class="contacto">Contáctanos</h2>
+        </section>
+        <section class="contenedorform__grid">
+            <div class="contenedorform">
+                <div class="form_titulo">
+                    <ul>
+                        <li>
+                            <p>Queremos conocerte, ven y encontremos en "El Tal Iván"</p>
+                    </ul>
+                </div>
             </div>
-            <div class="ubicacion__parrafo">
-                <p>Queremos conocerte, ven y encontremonos en "El Tal Ivan"</p>
-            </div>
-            <div class="ubicacion__mapa">
+            <div class="contenedor_mapa">
+                </br>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.967068144555!2d-70.93146308473288!3d-33.083650986166866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96629dc0409e55e3%3A0x1881a30f5a51a4f1!2sRestaurant%20el%20tal%20Iv%C3%A1n!5e0!3m2!1ses-419!2scl!4v1654294295385!5m2!1ses-419!2scl"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </section>
-        <hr>
-        <!-- formulario de contacto -->
-        <section class="contacto">
-            <div class="contacto__title">
-                <h4>Contacto</h4>
-            </div>
-            <form action="#">
-                <div class="contacto__nombre">
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre">
-                </div>
-                <div class="contacto__email">
-                    <label for="Email">Email</label>
-                    <input type="email" placeholder="Email" name="email">
-                </div>
-                <div class="contacto__mensaje">
-                    <label for="Observaciones"> Mensaje
-                        <textarea placeholder=""></textarea>
-                    </label>
-                </div>
-                <div class="contacto__enviar">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-            <hr>
     </main>
     <!-- cierre de form contacto -->
     <!-- inicio de footer -->
-    <footer class="footer">
-        <!-- <div class="colfooter">
-            <h3>Información</h3>
-            <a href="nosotros.html">
-                <h6>Nosotros</h6>
-            </a>
-            <a href="clientes.html">
-                <h6>Clientes</h6>
-            </a>
-            <a href="booster.html">
-                <h6>Booster</h6>
-            </a>
-            <a href="Contacto.html">
-                <h6>Contacto</h6>
-            </a>
-        </div> -->
-        <div class="footer__title">
-            <h5>Siguenos</h5>
-        </div>
-         <!-- boton fb-->
-         <div class="redes__sociales">
-            <div class="redes__fb">
-                <a href="https://www.facebook.com/talivan.parrilladas" class="button__fb" target="_blank">
-                    <i class="button__fb">
-                        <img src="./images/fb.png" alt="fb">
-                    </i>
-                </a>
+    <footer>
+        <section class="bg-dark text-white">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-5">Medios de pago</h1>
+                        <img src="./images/pagos.png" alt="pagos">
+                    </div>
+                    <div class="col">
+                        <h1 class="display-5">Siguenos</h1>
+                        <a href="https://wa.me/+56987476291" class="text-white fs-2 text-decoration-none"
+                            target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/talivan.parrilladas"
+                            class="text-white fs-2 text-decoration-none" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!--  BOTON WHATSAPP  -->
-            <div class="redes__wsp">  
-                <a href="https://wa.me/56987476291" class="button__whatsapp" target="_blank">
-                    <i class="button__whatsapp--mt">
-                        <img src="./images/whatsapp.png" alt="whatsapp_icon">
-                    </i>
-                </a>
-            </div>
-        </div>
-        <div class="footer__copyright">
-            <p>© Copyright 2022-2022 Francisco Perez - Todos los Derechos Reservados</p>
-        </div>
+        </section>
     </footer>
-    <!-- cierre de footer -->
 </body>
 
 </html>
