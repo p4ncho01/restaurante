@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
-	<link rel="stylesheet" href="../css/styles.css">
-	<title>Contacto</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+        <!-- fuente google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!-- Bosstrap-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../css/styles.css">
+        <!--icono -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <title>Tal-Ivan</title>
+    </head>
+
 <body>
-	<!-- fila de logo + nav --> 
-	<header class="header">
+    <!-- fila de logo + nav -->
+    <header class="header">
         <div class="header__content">
-            <a href="../index.html" class="content__title"><img src="../images/head_logo.png" alt="head_logo"></a>
+            <a href="../index.html" class="content__title"><img src="../images/head_logo.png" alt="head logo"></a>
             <nav>
                 <ul class="content__navbar">
                     <li><a href="../index.html">Inicio</a></li>
@@ -21,63 +33,53 @@
             </nav>
         </div>
     </header>
-	<!-- cierre de fila logo + nav -->
-	<!-- fila de información de mi sitio -->
+    <!-- cierre de fila logo + nav -->
+    <!-- fila de información de mi sitio -->
     <main>
-        <div class="banner_logo">
-            <title>Contactanos</title>
-            <img src="../images/fondo-contacto.jpg" alt="">
-        </div>
-	<section class="contacto">
-        <h4>Contacto</h4>
-        <form action="#">
-            <div class="nombre">
-                <label for="Nombre">Nombre</label><br>
-                <input type="text" placeholder="Nombre"><br>
+        <section class="">
+            <form class="form">
+                <div class="form__container">
+                    <h1 class="form__title">Contactanos</h1>
+                    <input type="text" class="form__input" placeholder="Nombre" />
+                    <input type="email" class="form__input" placeholder="Email" />
+                    <textarea class="form__input form__input--message" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="form__cta" />
+                </div>
+            </form>
+        </section>
+        <section id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.967068144555!2d-70.93146308473288!3d-33.083650986166866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96629dc0409e55e3%3A0x1881a30f5a51a4f1!2sRestaurant%20el%20tal%20Iv%C3%A1n!5e0!3m2!1ses-419!2scl!4v1654294295385!5m2!1ses-419!2scl"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <!-- cierre de form contacto -->
+    </main>
+    <!-- inicio de footer -->
+    <footer>
+        <section class="bg-dark text-white">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="display-5">Medios de pago</h4>
+                        <img src="../images/pagos.png" alt="pagos">
+                    </div>
+                    <div class="col">
+                        <h4 class="display-5">Siguenos</h4>
+                        <a href="https://wa.me/+56987476291" class="text-white fs-2 text-decoration-none"
+                            target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/talivan.parrilladas"
+                            class="text-white fs-2 text-decoration-none" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="email">
-                <label for="Email">Email</label><br>
-                <input type="email" placeholder="Email" name="email"><br>
-            </div>
-            <div class="mensaje">
-                <label for="Observaciones"> Mensaje<br>
-                    <textarea placeholder=""></textarea>
-                </label> <br>
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
-		   <!-- boton fb-->
-		   <div>
-			<a href="https://www.facebook.com/talivan.parrilladas" class="button__fb" target="_blank">
-			 <i class="button__fb">
-				 <img src="../images/fb.png" alt="fb">
-			 </i>
-			</a>
-		</div>
-		  <!--  BOTON WHATSAPP  -->
-		  <div>
-			<a href="https://wa.me/56987476291" class="button__whatsapp" target="_blank">
-				<i class="button__whatsapp--mt">
-					<img src="../images/wspicon.png" alt="whatsapp icon" >
-				</i>
-			</a>
-		</div>
-    </section>
-    <hr>
-    <section id="map">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.967068144555!2d-70.93146308473288!3d-33.083650986166866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96629dc0409e55e3%3A0x1881a30f5a51a4f1!2sRestaurant%20el%20tal%20Iv%C3%A1n!5e0!3m2!1ses-419!2scl!4v1654294295385!5m2!1ses-419!2scl"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    </section>
-	<!-- cierre de form contacto -->
-</main>
-	<!-- inicio de footer --> 
-	<footer>
-	   <div class="footer__copyright">
-		   <p>© Copyright 2022-2022 Francisco Perez - Todos los Derechos Reservados</p>
-	   </div>
-   </footer>
+        </section>
+    </footer>
 </body>
+
 </html>
