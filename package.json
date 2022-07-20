@@ -1,0 +1,22 @@
+{
+  "name": "talivan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p4ncho01/restaurante.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p4ncho01/restaurante/issues"
+  },
+  "homepage": "https://github.com/p4ncho01/restaurante#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
