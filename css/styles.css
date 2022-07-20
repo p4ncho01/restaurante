@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: bisque ;
+    background-color: bisque;
 }
 
 a {
@@ -217,12 +217,10 @@ ul {
 }
 
 .contenedor_mapa iframe {
-    width: 100%;
-    margin-right: 10rem;
     border-radius: 7px;
 }
 
-.col  {
+.col {
     margin: 1rem;
 }
 
@@ -284,8 +282,8 @@ ul {
 
 /* MAPA CONTACTO */
 
-#map iframe {
-    width: 100%;
+iframe {
+    width: 100% !important;
 }
 
 
@@ -293,26 +291,23 @@ ul {
 @media (max-width: 768px) {
     .productos__grid {
         grid-template-columns: 1fr;
-        margin-left: 26%
+        margin-left: 26%;
     }
 
-    .contenedor_mapa iframe {
-        width: 100% ;
-    }
 
     .contenedorform__grid {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
     }
-    
+
 
     .container_footer {
-        padding-top: 1rem ;
+        padding-top: 1rem;
         padding-bottom: 1rem;
-        margin-left: 13% ;
     }
-    .col img{
+
+    .col img {
         width: 100%;
     }
 }
@@ -321,9 +316,8 @@ ul {
     .content__navbar {
         flex-direction: column;
     }
-
-    .container_footer {
-        margin-left: 1%;
+    .productos__grid {
+        grid-template-columns: 1fr;
+        margin-left: 8%;
     }
-
 }
