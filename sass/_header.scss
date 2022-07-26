@@ -13,30 +13,21 @@
     }
 }
 
-
-
-
-.navegacion {
+.content__navbar {
     display: flex;
-
-    ul{
-        display: flex;
-        justify-content: space-around;
-        li {
-            margin: 0 15px;
+     li {
+        margin: 0 15px;
+        align-items: center;
+        a {
+            color: whitesmoke;
             align-items: center;
-    
-            a {
-                color: whitesmoke;
-                align-items: center;
-                font-size: 20px;
-            }
-            
+            font-size: 20px;
         }
     }
-    
-    
 }
+
+
+
 
 
 
