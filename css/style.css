@@ -38,6 +38,9 @@ ul {
       align-items: center;
       font-size: 20px; }
 
+.col {
+  margin: 1rem; }
+
 .banner_logo img {
   margin-left: auto;
   margin-right: auto;
@@ -57,6 +60,7 @@ ul {
 
 /* TARJETA */
 .card {
+  display: grid;
   background-color: #fff;
   padding: 20px;
   max-width: 400px;
@@ -87,18 +91,20 @@ ul {
     font-weight: bold; }
 
 .card__link, .button__productos {
-  background-color: #22c55e;
+  background-color: #241a9b;
   color: #fff;
   width: 100%;
   display: inline-block;
   border-radius: 10px;
   padding: 15px;
   text-align: center; }
+  .card__link:hover, .button__productos:hover {
+    color: #fff; }
 
 .button__productos {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: darkgrey;
-  color: red; }
+  color: #fff; }
 
 .card2 {
   background-color: #fff;
@@ -125,6 +131,7 @@ ul {
     margin-bottom: 20px;
     text-align: center; }
   .productos__grid {
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
@@ -170,33 +177,6 @@ ul {
   max-height: 410px;
   margin: 1rem;
   border-radius: 7px; }
-
-.col {
-  margin: 1rem; }
-
-/* mobile last */
-@media (max-width: 768px) {
-  .productos__grid {
-    grid-template-columns: 1fr;
-    margin-left: 26%; }
-  .contenedorform__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center; }
-  .container_footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-  .col img {
-    width: 100%; } }
-
-@media (max-width: 480px) {
-  .content__navbar {
-    flex-direction: column; }
-  .productos__grid {
-    grid-template-columns: 1fr;
-    margin-left: 8%; }
-  .contenedor_mapa iframe {
-    margin: 0rem; } }
 
 .form {
   background-color: white;
@@ -272,7 +252,7 @@ iframe {
   .card__description {
     margin-bottom: 40px; }
   .card__link, .button__productos {
-    background-color: #22c55e;
+    background-color: #241a9b;
     color: #fff;
     width: 100%;
     display: inline-block;
@@ -305,3 +285,32 @@ iframe {
     text-align: center;
     margin-left: 30%;
     margin-top: 2%; }
+
+/* mobile last */
+@media (max-width: 768px) {
+  .productos__grid {
+    grid-template-columns: 1fr;
+    margin-left: 26%;
+    justify-content: center; }
+  .card {
+    justify-content: center; }
+  .contenedorform__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center; }
+  .container_footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .col img {
+    width: 100%; }
+  .contenedor_mapa iframe {
+    margin: 0rem; } }
+
+@media (max-width: 480px) {
+  .content__navbar {
+    flex-direction: column; }
+  .productos__grid {
+    grid-template-columns: 1fr;
+    margin-left: 8%;
+    justify-content: center; } }
