@@ -97,7 +97,8 @@ ul {
   display: inline-block;
   border-radius: 10px;
   padding: 15px;
-  text-align: center; }
+  text-align: center;
+  margin: auto; }
   .card__link:hover, .button__productos:hover {
     color: #fff; }
 
@@ -184,41 +185,36 @@ ul {
   max-width: 400px;
   border-radius: 1em;
   padding: 3.5em 1.5em;
-  margin: auto; }
-
-.form__container {
-  width: 100%;
-  display: grid;
-  gap: 1em;
-  grid-auto-columns: 1; }
-
-.form__title {
-  text-align: center;
-  font-size: 1.9rem;
-  margin-bottom: 0.4em; }
-
-.form__input {
-  font-size: 1rem;
-  padding: 0.8em 1em;
-  outline: none;
-  border: none;
-  border: 1px solid grey;
-  border-radius: 0, 2em; }
-
-.form__input--message {
-  resize: none;
-  padding: 1.8em 1em;
-  margin-bottom: 0.5em; }
-
-.form__cta {
-  font-size: 1rem;
-  background-color: #dc3545;
-  border: none;
-  font-weight: 300;
-  padding: 0.7em 0;
-  border-radius: 0.2em;
-  cursor: pointer;
-  font-weight: 400; }
+  margin: 1rem auto 1rem; }
+  .form__container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 1; }
+  .form__title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.4em; }
+  .form__input {
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 0, 2em; }
+  .form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 0.5em; }
+  .form__cta {
+    font-size: 1rem;
+    background-color: #dc3545;
+    border: none;
+    font-weight: 300;
+    padding: 0.7em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-weight: 400; }
 
 /* MAPA CONTACTO */
 iframe {
@@ -250,6 +246,7 @@ iframe {
   .card__title {
     margin-bottom: 20px; }
   .card__description {
+    font-family: monospace;
     margin-bottom: 40px; }
   .card__link, .button__productos {
     background-color: #241a9b;
