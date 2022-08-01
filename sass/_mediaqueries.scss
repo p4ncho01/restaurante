@@ -2,13 +2,14 @@
 @media (max-width: 768px) {
     .productos__grid {
         grid-template-columns: 1fr;
-         margin-left: 26%;
+        margin-left: 26%;
         justify-content: center;
     }
 
-    .card{
+    .card {
         justify-content: center;
     }
+
     .contenedorform__grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -25,8 +26,14 @@
     .col img {
         width: 100%;
     }
+
+    .contenedorform {
+        justify-content: center;
+        margin-left: 25%;
+    }
     .contenedor_mapa iframe {
-        margin: 0rem;
+        margin-left: 10%;
+        
     }
 }
 
@@ -34,11 +41,12 @@
     .content__navbar {
         flex-direction: column;
     }
+
     .productos__grid {
         grid-template-columns: 1fr;
         margin-left: 8%;
         justify-content: center;
     }
 
-  
+
 }

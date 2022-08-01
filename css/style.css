@@ -301,8 +301,11 @@ iframe {
     padding-bottom: 1rem; }
   .col img {
     width: 100%; }
+  .contenedorform {
+    justify-content: center;
+    margin-left: 25%; }
   .contenedor_mapa iframe {
-    margin: 0rem; } }
+    margin-left: 10%; } }
 
 @media (max-width: 480px) {
   .content__navbar {
